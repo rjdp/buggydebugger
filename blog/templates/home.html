@@ -1,0 +1,23 @@
+{% load tinymce_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<pre>
+	Rajdeep Will always love Tasneem
+
+	No    Matter What!   ! df
+</pre>
+{% tinymce_preview "preview-content" %}
+{% for object in object_list %}
+
+<div id="preview-content">
+	{{object.content | safe}}
+</div>
+
+{% endfor %}
+
+</body>
+</html>
